@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="grid">
-      <div class="col-12"><ChartContainer></ChartContainer></div>
+      <div class="col-12 sm:col-9"><ChartContainer></ChartContainer></div>
     </div>
   </div>
 </template>
@@ -38,6 +38,8 @@ export default {
 .container {
   /* text-align: center; */
   padding: 20px;
+  /* max-width: 80%;
+  max-height: 80%; */
 }
 
 .personalInfo {

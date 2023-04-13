@@ -1,5 +1,7 @@
 <template>
-  <Dashboard></Dashboard>
+  <div class="mainConatiner">
+    <Dashboard></Dashboard>
+  </div>
 </template>
 
 <script>
@@ -20,5 +22,8 @@ export default {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+.mainContainer {
+  margin: auto;
 }
 </style>
