@@ -1,30 +1,35 @@
 <template>
   <div class="container">
-    <h1>Dashboard</h1>
+    <div class="personalInfo">
+      <p class="name">Hello, <span class="boldName">Mayank Jhavre</span></p>
+      <p class="datetime"></p>
+    </div>
     <div class="grid">
-      <div class="col-12 sm:col-3 bg-orange">
+      <div class="col-12 sm:col-4 bg-orange">
         <InfoContainer></InfoContainer>
       </div>
-      <div class="col-12 sm:col-3 bg-orange">
+      <div class="col-12 sm:col-4 bg-orange">
         <InfoContainer></InfoContainer>
       </div>
-      <div class="col-12 sm:col-3 bg-orange">
+      <div class="col-12 sm:col-4 bg-orange">
         <InfoContainer></InfoContainer>
       </div>
     </div>
     <div class="grid">
-      <div class="col-12"></div>
+      <div class="col-12"><ChartContainer></ChartContainer></div>
     </div>
   </div>
 </template>
 
 <script>
 import InfoContainer from "./InfoConatiner.vue";
+import ChartContainer from "./ChartContainer.vue";
 
 export default {
   name: "Dashboard",
   components: {
     InfoContainer,
+    ChartContainer,
   },
 };
 </script>
@@ -32,6 +37,17 @@ export default {
 <style>
 .container {
   /* text-align: center; */
+  padding: 20px;
+}
+
+.personalInfo {
+}
+
+.name {
+}
+
+.boldName {
+  font-weight: 700;
 }
 
 .grid {
