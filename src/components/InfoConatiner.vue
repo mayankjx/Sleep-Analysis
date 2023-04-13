@@ -1,18 +1,43 @@
 <template>
   <div class="info">
-    <div class="value">98</div>
-    <div class="title">Heart Rate</div>
-    <div class="remark">This heart rate is very good</div>
+    <div class="value">{{ value }}</div>
+    <div class="title">{{ title }}</div>
+    <div class="remark">{{ remark }}</div>
   </div>
 </template>
 
 <script>
+import { isIntegerKey } from "@vue/shared";
 import Card from "primevue/card";
+import { reactive, onMounted, defineProps, pr } from "vue";
 
 export default {
   name: "InfoContainer",
   components: {
     Card,
+  },
+  props: {
+    value: {
+      type: String,
+      required: true,
+    },
+    title: {
+      type: String,
+      required: true,
+    },
+    remark: {
+      type: String,
+      required: true,
+    },
+  },
+  setup(props) {
+    let { value, title, remark } = props;
+
+    return {
+      value,
+      title,
+      remark,
+    };
   },
 };
 </script>

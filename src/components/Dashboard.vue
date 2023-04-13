@@ -6,13 +6,25 @@
     </div>
     <div class="grid">
       <div class="col-12 sm:col-3 bg-orange">
-        <InfoContainer></InfoContainer>
+        <InfoContainer
+          value="98"
+          title="Heart Rate"
+          remark="Very good"
+        ></InfoContainer>
       </div>
       <div class="col-12 sm:col-3 bg-orange">
-        <InfoContainer></InfoContainer>
+        <InfoContainer
+          value="93"
+          title="Sp02"
+          remark="Mild okaish"
+        ></InfoContainer>
       </div>
       <div class="col-12 sm:col-3 bg-orange">
-        <InfoContainer></InfoContainer>
+        <InfoContainer
+          value="60"
+          title="Movement"
+          remark="Optimal movement"
+        ></InfoContainer>
       </div>
     </div>
     <div class="grid">
