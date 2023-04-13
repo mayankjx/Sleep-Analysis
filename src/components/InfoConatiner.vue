@@ -19,7 +19,8 @@ export default {
 
 <style>
 .info {
-  /* height: 40vh; */
+  /* height: 100%;
+  width: 60%; */
   padding: 20px;
   border-radius: 10px;
   background-color: bisque;

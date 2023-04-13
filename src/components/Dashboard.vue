@@ -5,13 +5,13 @@
       <p class="datetime"></p>
     </div>
     <div class="grid">
-      <div class="col-12 sm:col-4 bg-orange">
+      <div class="col-12 sm:col-3 bg-orange">
         <InfoContainer></InfoContainer>
       </div>
-      <div class="col-12 sm:col-4 bg-orange">
+      <div class="col-12 sm:col-3 bg-orange">
         <InfoContainer></InfoContainer>
       </div>
-      <div class="col-12 sm:col-4 bg-orange">
+      <div class="col-12 sm:col-3 bg-orange">
         <InfoContainer></InfoContainer>
       </div>
     </div>
@@ -53,5 +53,6 @@ export default {
 .grid {
   margin: auto;
   text-align: center;
+  /* justify-content: center; */
 }
 </style>
