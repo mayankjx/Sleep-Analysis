@@ -5,7 +5,7 @@
       <p class="datetime"></p>
     </div>
     <div class="grid">
-      <div class="col-12 sm:col-3 bg-orange">
+      <div class="col-12 sm:col-3 bg-orange justify-content-center">
         <InfoContainer
           value="98"
           title="Heart Rate"
