@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import { isIntegerKey } from "@vue/shared";
 import Card from "primevue/card";
 import { reactive, onMounted, defineProps, pr } from "vue";
 

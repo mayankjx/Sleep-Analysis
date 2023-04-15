@@ -17,13 +17,14 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap");
+.body {
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
+  font-family: "Schibsted Grotesk";
 }
 .mainContainer {
   margin: auto;

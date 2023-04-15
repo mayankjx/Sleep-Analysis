@@ -1,34 +1,37 @@
 <template>
   <div class="container">
-    <div class="personalInfo">
-      <p class="name">Hello, <span class="boldName">Mayank Jhavre</span></p>
-      <p class="datetime"></p>
-    </div>
     <div class="grid">
-      <div class="col-12 sm:col-3 bg-orange justify-content-center">
-        <InfoContainer
-          value="98"
-          title="Heart Rate"
-          remark="Very good"
-        ></InfoContainer>
+      <div class="sm:col-3 col-12">
+        <Score></Score>
       </div>
-      <div class="col-12 sm:col-3 bg-orange">
-        <InfoContainer
-          value="93"
-          title="Sp02"
-          remark="Mild okaish"
-        ></InfoContainer>
+      <div class="sm:col-9 col-12">
+        <div class="grid">
+          <div class="col-12 sm:col-4 bg-orange justify-content-center">
+            <InfoContainer
+              value="98"
+              title="Heart Rate"
+              remark="Very good"
+            ></InfoContainer>
+          </div>
+          <div class="col-12 sm:col-4 bg-orange">
+            <InfoContainer
+              value="93"
+              title="Sp02"
+              remark="Mild okaish"
+            ></InfoContainer>
+          </div>
+          <div class="col-12 sm:col-4 bg-orange">
+            <InfoContainer
+              value="60"
+              title="Movement"
+              remark="Optimal movement"
+            ></InfoContainer>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="col-12 sm:col-12"><ChartContainer></ChartContainer></div>
+        </div>
       </div>
-      <div class="col-12 sm:col-3 bg-orange">
-        <InfoContainer
-          value="60"
-          title="Movement"
-          remark="Optimal movement"
-        ></InfoContainer>
-      </div>
-    </div>
-    <div class="grid">
-      <div class="col-12 sm:col-9"><ChartContainer></ChartContainer></div>
     </div>
   </div>
 </template>
@@ -36,12 +39,14 @@
 <script>
 import InfoContainer from "./InfoConatiner.vue";
 import ChartContainer from "./ChartContainer.vue";
+import Score from "./Score.vue";
 
 export default {
   name: "Dashboard",
   components: {
     InfoContainer,
     ChartContainer,
+    Score,
   },
 };
 </script>

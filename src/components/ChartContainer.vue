@@ -1,7 +1,7 @@
 <template>
   <div id="chartArea">
     <!-- <Chart type="line" :data="data" class="h-30rem"></Chart> -->
-    <LineChart :chartData="data" />
+    <BarChart :chartData="data" />
   </div>
 </template>
 
@@ -9,22 +9,30 @@
 // import Chart from "primevue/chart";
 import { reactive, onMounted } from "vue";
 // import Chart from "chart.js/auto";
-import { LineChart } from "vue-chart-3";
+import { LineChart, BarChart } from "vue-chart-3";
 import { Chart, registerables } from "chart.js";
 
 Chart.register(...registerables);
 export default {
   components: {
     LineChart,
+    BarChart,
   },
   setup() {
     const data = reactive({
       datasets: [
         {
-          data: [20, 10],
+          data: [20, 10, 40, 30, 10, 20, 5],
         },
       ],
-      labels: ["a", "b"],
+      labels: [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednessday",
+        "Friday",
+        "Sataurday",
+      ],
     });
 
     const renderChart = () => {
@@ -54,6 +62,7 @@ export default {
 </script>
 
 <style>
-.chartArea {
+#chartArea {
+  margin-top: 20px;
 }
 </style>
