@@ -1,6 +1,8 @@
 <template>
   <div class="mainContainer">
-    <div class="navbar"></div>
+    <div class="navbar">
+      <div class="website">Sleep Tracking App</div>
+    </div>
     <Dashboard></Dashboard>
   </div>
 </template>
@@ -46,5 +48,10 @@ body {
   height: 10%;
   width: 100%;
   border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
 }
 </style>

@@ -9,25 +9,22 @@
           <div class="col-12 sm:col-4 bg-orange justify-content-center">
             <InfoContainer
               icon="heart"
-              value="98"
+              :value="heartRate"
               title="Heart Rate"
-              remark="Very good"
             ></InfoContainer>
           </div>
           <div class="col-12 sm:col-4 bg-orange">
             <InfoContainer
               :icon="'blood'"
-              value="93"
-              title="Sp02"
-              remark="Mild okaish"
+              :value="spo2"
+              title="SpO2"
             ></InfoContainer>
           </div>
           <div class="col-12 sm:col-4 bg-orange">
             <InfoContainer
               icon="movement"
-              value="60"
+              :value="movement"
               title="Movement"
-              remark="Optimal movement"
             ></InfoContainer>
           </div>
         </div>
@@ -43,6 +40,7 @@
 import InfoContainer from "./InfoConatiner.vue";
 import ChartContainer from "./ChartContainer.vue";
 import Score from "./Score.vue";
+import { ref } from "vue";
 
 export default {
   name: "Dashboard",
@@ -50,6 +48,17 @@ export default {
     InfoContainer,
     ChartContainer,
     Score,
+  },
+  setup() {
+    let heartRate = ref(30);
+    let spo2 = ref(85);
+    let movement = ref(100);
+
+    return {
+      heartRate,
+      spo2,
+      movement,
+    };
   },
 };
 </script>
