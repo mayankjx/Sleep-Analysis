@@ -1,5 +1,6 @@
 <template>
-  <div class="mainConatiner">
+  <div class="mainContainer">
+    <div class="navbar"></div>
     <Dashboard></Dashboard>
   </div>
 </template>
@@ -18,15 +19,32 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap");
-.body {
+body {
+  margin: 0px;
+  /* background-color: #fcfbf4; */
+  background-color: #faf9f6;
+  width: 100vw;
+  height: 100vh;
+  color: #03040b;
+  /* color: #f4f5fc; */
 }
 #app {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Schibsted Grotesk";
+  height: 100%;
+  width: 100%;
 }
 .mainContainer {
   margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  height: 10%;
+  width: 100%;
+  border-bottom: 1px solid black;
 }
 </style>

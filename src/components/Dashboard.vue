@@ -8,6 +8,7 @@
         <div class="grid">
           <div class="col-12 sm:col-4 bg-orange justify-content-center">
             <InfoContainer
+              icon="heart"
               value="98"
               title="Heart Rate"
               remark="Very good"
@@ -15,6 +16,7 @@
           </div>
           <div class="col-12 sm:col-4 bg-orange">
             <InfoContainer
+              :icon="'blood'"
               value="93"
               title="Sp02"
               remark="Mild okaish"
@@ -22,6 +24,7 @@
           </div>
           <div class="col-12 sm:col-4 bg-orange">
             <InfoContainer
+              icon="movement"
               value="60"
               title="Movement"
               remark="Optimal movement"
@@ -54,19 +57,10 @@ export default {
 <style>
 .container {
   /* text-align: center; */
-  padding: 20px;
-  /* max-width: 80%;
-  max-height: 80%; */
-}
-
-.personalInfo {
-}
-
-.name {
-}
-
-.boldName {
-  font-weight: 700;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-height: 80%;
 }
 
 .grid {
